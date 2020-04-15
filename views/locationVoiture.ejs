@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> <%= name %> </title>
+
+
+    <!-- START  onecms HEAD -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://a1.odistatic.net/content/img/OF/WebMasterPages/css/template/style-ed.css">
+
+    <style>
+
+    </style>
+    <!-- END  onecms HEAD  -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style-ed.css">
+</head>
+
+<body>
+
+
+
+    <!-- START onecms BODY   -->
+    <div id="wmp">
+
+
+
+        <!-- Section HERO BANNER:
+        ======================================================================================================== -->
+        <section>
+            <div class="hero container-fluid">
+                <div class="container">
+                    <div class="row align-items-center white py-5">
+                        <div class="col-sm-5">
+                            <h1 class="lighter-blue py-2"> <%- titleH1 %> </h1>
+                        </div>
+                        <div class="col-sm-7">
+                            <div data-type="widget" data-id="flights-manager" data-name="flightsmanager">
+                                <div data-type="widget-param" data-name="productsList"
+                                    data-value="flights,hotels,dp,cars"></div>
+                                <div data-type="widget-param" data-name="activeTab" data-value="dp"></div>
+                                <div data-type="widget-param" data-name="isExpanded" data-value="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Section INTRO:
+        ======================================================================================================== -->
+
+        <section class="container">
+            <div class="odf-breadcrumbs">
+                <span class="odf-breadcrumb-item">
+                    <a class="odf-breadcrumb-link" href="https://www.edreams.fr">Accueil </a>
+                    <span class="odf-breadcrumb-arrow odf-icon odf-icon-arrow-right"></span></span>
+                <span class="odf-breadcrumb-item">
+                    <a class="odf-breadcrumb-link" href="#">Location Voiture <%= name %> </a></span>
+            </div>
+
+        </section>
+
+
+        <!-- Section TEXT + IMAGE :
+        ======================================================================================================== -->
+
+        <section class="container">
+            <div class="wmp-box-title-container">
+              <div class="wmp-box-title black">
+                      <%- body1Title %>
+              </div>
+                
+                <div class="wmp-box-hr float-right "></div>
+            </div>
+            <img class="img-fluid"
+                src="https://a1.odistatic.net/content/img/OF/WebMasterPages/images/730x486/backpack.png" alt="">
+            <div class="wmp-box-text">
+                <%- body1Text %>
+            </div>
+
+        </section>
+
+
+        <!-- Section GENERAL :
+        ======================================================================================================== -->
+        <section class="container" id="wmp-sec-how">
+
+            <div class="wmp-text">
+
+                <div class="wmp-box-hr-top"></div>
+
+                <%- body2Title %>
+
+              <%- body2Text %>
+
+
+            </div>
+        </section>
+
+                <!-- Section GENERAL ALIGN LEFT :
+        ======================================================================================================== -->
+        <section class="container mt-128" id="wmp-sec-how">
+<div class="row">
+    <div class="col-lg-8 offset-lg-4">
+        <div class="wmp-text">
+            <div class="wmp-box-hr-top"></div>
+            <%- body3Title %>
+           <%- body3Text %>
+            </div>
+    </div>
+
+
+</div>
+
+
+        </section>
+
+                <!-- Section GENERAL  :
+        ======================================================================================================== -->
+        <section class="container mt-128" id="wmp-sec-how">
+
+            <div class="wmp-text">
+
+                <div class="wmp-box-hr-top"></div>
+                <%- body4Title %>
+                <%- body4Text %>
+            </div>
+        </section>
+
+
+
+        <!-- Section FAQ:
+        ======================================================================================================== -->
+
+        <section class="container  mt-64" id="FAQ">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+
+                  <div class="mt-32 mt-32"> 
+                    <%- FAQTitle %>
+                   
+                  </div>
+
+                    
+                    <div class="line-long float-right mb-64"></div>
+
+                </div>
+                <div class="col-lg-8 offset-lg-2 ">
+                    <div class="outline ">
+                            <div class="question mt-32">
+                                <%- FAQQuest1 %>
+                            </div>
+                            <div class="answer">
+                                  <%- FAQAnswer1 %>
+                            </div>
+                            <div class="division"></div>
+                            <div class="question mt-32">
+                                   <%- FAQQuest2 %>
+                              </div>
+                              <div class="answer">
+                                      <%- FAQAnswer2 %>
+                              </div>
+                              <div class="division"></div>
+                              <div class="question mt-32">
+                                     <%- FAQQuest3 %>
+                                </div>
+                                <div class="answer mb-32">
+                                       <%- FAQAnswer3 %>
+                                </div>
+                                            
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+    <!-- onecms BODY END  -->
+</body>
+
+</html>
