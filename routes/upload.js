@@ -50,7 +50,7 @@ router.post('/', function(req, res) {
           let template = fs.readFileSync(viewsPath, 'utf-8')
            var html = ejs.render( template, page);
 
-         let resultsPath = path.join(__dirname, `/../tmp/${tempFolder}/files/result-${index}.html` )
+         let resultsPath = path.join(__dirname, `/../tmp/${tempFolder}/files/${index}-ED-${page.name}.html` )
 
           fs.writeFileSync( resultsPath, html, 'utf8')
 

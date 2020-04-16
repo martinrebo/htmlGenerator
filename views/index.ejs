@@ -2,13 +2,22 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <nav> Crawlytics <span style="font-size: 16px;"> tools </span> </nav>
+    <div class="container">
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <p>Choose a Template and automaticaly generate html files </p>
+    <hr>
 
-<p> Upload a file:  </p>
+    <p> 1.  Select and download  template </p>
+
+    <a href="http://localhost:3000/csvTemplate"> Template Location Voiture </a>
+    <hr>
+
+<p> 2. Choose a file on your computer  </p>
 
 <form ref='uploadForm' 
       id='uploadForm' 
@@ -16,8 +25,10 @@
       method='post' 
       encType="multipart/form-data">
         <input type="file" name="sampleFile" />
-        <input type='submit' value='Upload!' />
+<hr> 
+ <p> 3. Upload your content</p>       
+        <input class="btn btn-primary" type='submit' value='Upload!' />
     </form>     
-
+  </div>
   </body>
 </html>

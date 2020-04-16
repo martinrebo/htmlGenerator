@@ -1,8 +1,16 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+nav {
+  background-color: #00B7FF;
+  color: #FFF ;
+  padding: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  
 }
