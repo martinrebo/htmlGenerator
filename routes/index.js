@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'HTML Generator' });
+  res.render('index', { title: 'WMP Generator' });
 });
 
 module.exports = router;

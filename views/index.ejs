@@ -6,10 +6,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <nav> Crawlytics <span style="font-size: 16px;"> tools </span> </nav>
+    <nav> Crawlytics <span style="font-size: 16px;"> WMP Tools  </span> </nav>
     <div class="container">
+      <br><br>
     <h1><%= title %></h1>
-    <p>Choose a Template and automaticaly generate html files </p>
+    <p>Choose a Template and automaticaly generate html files adapted to WMP </p>
     <hr>
 
     <p> 1.  Select and download  template </p>
@@ -24,7 +25,7 @@
       action='http://localhost:3000/upload' 
       method='post' 
       encType="multipart/form-data">
-        <input type="file" name="sampleFile" />
+        <input  class="btn btn-secondary" type="file" name="sampleFile" />
 <hr> 
  <p> 3. Upload your content</p>       
         <input class="btn btn-primary" type='submit' value='Upload!' />
